@@ -1,0 +1,14 @@
+package org.libre.com.model;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class UserModel {
+	@Id
+	private Integer userId;
+	private String firstName;
+	private String email;
+	private String lastname;
+	private Integer phoneNumber;
+}

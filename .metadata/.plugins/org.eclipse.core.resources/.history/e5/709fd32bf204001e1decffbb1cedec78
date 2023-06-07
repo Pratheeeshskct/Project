@@ -1,0 +1,8 @@
+package org.libre.com.repository;
+
+import org.libre.com.model.UserModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<UserModel, Integer> {
+	public void existsByEmailAndPasword(String email, String password);
+}

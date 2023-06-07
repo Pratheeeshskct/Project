@@ -1,0 +1,17 @@
+package org.libre.com.service;
+
+import org.libre.com.dto.LoginDto;
+import org.libre.com.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+	@Autowired
+	public UserRepository repo;
+	
+	public boolean Login(LoginDto user) {
+		boolean value = repo.existsByEmailAndPassword(user.getEmail(), user.getEmail());
+		return value;
+	}
+}
