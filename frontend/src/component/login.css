@@ -1,0 +1,78 @@
+.login-container {
+    background-image: url('D:\Project\frontend\src\login.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login {
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.login>h1 {
+    text-align: center;
+}
+
+.login-page {
+    margin: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.login-page>h1:nth-child(1) {
+    border-radius: 1rem;
+    padding: 0 2rem;
+
+}
+
+.login-page>h1:nth-child(2) {
+    border-radius: 1rem;
+    padding: 0 2rem;
+}
+
+.active-login-page {
+    background-color: black;
+    color: white;
+}
+
+.login-inputs {
+    display: grid;
+}
+
+.login-inputs>input {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    margin: 1rem 0;
+}
+
+.login>p {
+    color: lightskyblue;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-button>button {
+    width: 70%;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
